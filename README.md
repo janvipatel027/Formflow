@@ -1,6 +1,3 @@
-# FormFlow - MERN Stack Form Builder
-
-A powerful form builder application built with the MERN (MongoDB, Express.js, React.js, Node.js) stack.
 
 ## Features
 
@@ -29,50 +26,33 @@ A powerful form builder application built with the MERN (MongoDB, Express.js, Re
   - Mongoose
   - CORS
 
-## Getting Started
+## Database
+Create the database named formflow and restore the sql file which is in the Database folder.(Formflow/Database/formflow.sql)
 
 ### Prerequisites
 
 - Node.js (v14 or higher)
-- MongoDB (local or Atlas URI)
+- postgres 
 
 ### Installation
 
-1. Clone the repository:
-\`\`\`bash
-git clone <repository-url>
-cd formflow
-\`\`\`
-
-2. Install server dependencies:
-\`\`\`bash
+1. Install server dependencies:
 cd server
-npm install
-\`\`\`
+npm i
 
-3. Install client dependencies:
-\`\`\`bash
+2. Install client dependencies:
 cd ../client
-npm install
-\`\`\`
-
-4. Configure environment variables:
-   - Copy `.env.example` to `.env` in the server directory
-   - Update MongoDB URI and other configurations
+npm i
 
 ### Running the Application
 
 1. Start the server:
-\`\`\`bash
 cd server
-npm run dev
-\`\`\`
+npm start
 
 2. Start the client:
-\`\`\`bash
-cd client
+cd client 
 npm start
-\`\`\`
 
 The application will be available at:
 - Frontend: http://localhost:3000
@@ -94,27 +74,6 @@ The application will be available at:
 - POST `/api/responses` - Submit a new response
 - GET `/api/responses/form/:formId/stats` - Get response statistics
 
-## Project Structure
-
-\`\`\`
-formflow/
-├── client/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── App.js
-│   │   └── index.js
-│   └── package.json
-├── server/
-│   ├── src/
-│   │   ├── config/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   └── server.js
-│   └── package.json
-└── README.md
-\`\`\`
 
 ## Contributing
 
@@ -124,6 +83,3 @@ formflow/
 4. Push to the branch
 5. Create a new Pull Request
 
-## License
-
-This project is licensed under the MIT License.
