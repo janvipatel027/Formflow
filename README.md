@@ -22,8 +22,7 @@
 - **Backend:**
   - Node.js
   - Express.js
-  - MongoDB
-  - Mongoose
+  - postgres
   - CORS
 
 ## Database
